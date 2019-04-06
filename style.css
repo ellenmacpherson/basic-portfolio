@@ -3,21 +3,26 @@
 #---------- RESET
 ##############################################################
 */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  max-height: 100vh;
-  min-width: 100%;
-  color: #333;
+html, body {
+  z-index: 1;
+  height: 100%;
+  margin: 0;
 }
-
-
-
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -80px;
+}
+.footer {
+  height: 60px;
+}
 
 /*
 ##############################################################
@@ -25,8 +30,9 @@ body {
 ##############################################################
 */
 
-
 .main-top-nav {
+  z-index: 1000000;
+  height: 60px;
   font-size: 22px;
   text-align: center;
   position: absolute;
@@ -53,12 +59,17 @@ body {
   text-decoration: none;
 }
 
+#home-page.main-top-nav {
+  z-index: 10;
+}
+
 footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  height: 60px;
+  width:100%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 20px 0px;
   text-align: center;
+  clear: both;
 }
 
 .social-icons {
@@ -81,10 +92,144 @@ footer {
 }
 
 /*##############################################################
-#---------- CONTACT PAGE
+#---------- ABOUT PAGE
 ##############################################################
 */
 
+#about-intro {
+  margin-top: 40vh;
+  height: 100vh;
+}
+
+#about-content {
+  text-align: center;
+  width: 70%;
+  line-height: 2;
+  display: block;
+  margin: 0 auto 50px auto;
+  padding: 50px;
+}
+
+#about-content h5 {
+  padding-top: 5px;
+}
+
+#about-content p {
+  padding: 10px;
+}
+
+.first-p {
+  font-weight: bold;
+}
+
+.about-h1 {
+  display: inline-block;
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(135, 182, 167, 0.8);
+  padding: 10px 30px;
+}
+
+main {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+#typewriter {
+  /* margin-top: 150px; */
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 40px;
+  font-size: 3rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+.fa-chevron-circle-down {
+  margin-top: 100px;
+  padding: 0px 20px;
+  font-size: 104px;
+  color: rgba(135, 182, 167, 0.8);
+}
+
+.fa-chevron-circle-down:hover {
+  color: #333;
+}
+
+/*
+##############################################################
+#---------- WORK PAGE
+##############################################################
+*/
+
+.work-intro {
+  margin-top: 40vh;
+  height: 100vh;
+}
+.work-intro h5 {
+  padding-top: 6rem;
+}
+
+.work-intro h1 {
+  padding-bottom: 30px;
+}
+
+.work-h1 {
+  display: inline-block;
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  background: rgba(255, 23, 167, 0.7);
+  padding: 10px;
+}
+
+#portfolio-images {
+  margin: 0 auto;
+  width: 60%;
+  padding: 40px;
+}
+
+#portfolio-images p {
+  padding: 20px;
+}
+
+#services {
+  font-size: 1em;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.screenshots {
+  margin: 30px 0px;
+  /* height: 500px; */
+  width: 100%;
+}
+
+.screenshots img,
+video {
+  margin: 0 auto;
+  border-radius: none;
+  width: 100%;
+}
+
+.image-titles {
+  padding-top: 30px;
+}
+
+.work-page .fa-chevron-circle-down {
+  /* padding-top: 6rem; */
+  color: rgba(255, 23, 167, 0.7);
+}
+
+
+
+/*##############################################################
+#---------- CONTACT PAGE
+##############################################################
+*/
 .contact-main {
   margin: 0 auto;
   text-align: center;
@@ -147,7 +292,6 @@ label {
 #---------- MEDIA QUERIES - TABLETS AND SMARTPHONES
 ##############################################################
 */
-
 @media screen and (max-width: 800px) {
 
   #home-image,
@@ -156,9 +300,10 @@ label {
     min-width: 100%;
     text-align: center;
     margin-bottom: 20px;
+    max-height: 100vh;
   }
 
-  img {
+  #home-img {
     margin-top: 150px;
     text-align: center;
     width: 200px;
@@ -171,18 +316,18 @@ label {
     display: block;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .home-h1,
-  .home-h2  {
+  .home-h2 {
     opacity: 0.9;
     display: inline-block;
   }
 
   .home-h2 {
     margin: 20px 0px;
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .home-h1 span {
@@ -195,7 +340,7 @@ label {
     padding: 10px;
     display: inline;
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
 
   #firstname {
@@ -208,17 +353,16 @@ label {
     position: relative;
     background-color: rgba(135, 182, 167, 0.8);
   }
-
 }
+
 
 /*
 ##############################################################
 #---------- MEDIA QUERIES - DESKTOP
 ##############################################################
 */
+@media screen and (min-width: 800px) {
 
-
-@media screen and (min-width: 800px)  {
   #home-link:hover {
     color: rgba(255, 127, 80, 0.8);
   }
@@ -236,10 +380,11 @@ label {
   }
 
   #home-headers {
+    height: auto;
     width: 70%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: repeat(10, 10vh);
+    grid-template-rows: repeat(5, 10vh);
   }
 
   #home-image {
@@ -248,10 +393,10 @@ label {
     height: 100%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: repeat(10, 10vh);
+    grid-template-rows: repeat(5, 10vh);
   }
 
-  img {
+  #home-img {
     margin-left: 70px;
     grid-row: 4 / span 6;
     grid-column: 2 / span 2;
@@ -291,9 +436,8 @@ label {
     padding: 10px;
     display: inline;
     font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
-
 
   #firstname {
     grid-row: 3 /ß 2;
@@ -305,10 +449,6 @@ label {
     padding-top: 10px;
     margin-left: 30px;
   }
-}
-
-@media screen and (min-width: 1000px) {
-
 }
 
 @media screen and (min-height: 1000px) {

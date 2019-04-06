@@ -9,41 +9,78 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
-    <nav class='main-top-nav'>
-      <ul>
-        <li><a href='index.html' id='home-link'>home</a></li>
-        <li>//</li>
-        <li><a href='about.html' id='about-link'>about</a></li>
-        <li>//</li>
-        <li><a href='work.html' id='work-link'>work</a></li>
-        <li>//</li>
-        <li><a href='contact.html' id='contact-link'>contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- <main>
-    <h4 class='work-h4'></h4>
-    <section class='portfolio-images'>
-      <div class="screenshotsß">
-        <img src="images/portfolio-screenshot.png" alt="Screenshot of portfolio site home page.">
-      </div>
-    </section> -->
+<body class='long-content-page'>
+  <div class="wrapper">
 
 
-  </main>
+    <header>
+      <nav class='main-top-nav'>
+        <ul>
+          <li><a href='index.html' id='home-link'>home</a></li>
+          <li>//</li>
+          <li><a href='about.html' id='about-link'>about</a></li>
+          <li>//</li>
+          <li><a href='work.html' id='work-link'>work</a></li>
+          <li>//</li>
+          <li><a href='contact.html' id='contact-link'>contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class='work-page'>
+      <section class='work-intro'>
+        <h1>Here you can find links to my personal projects and freelance work.</h1>
+        <h5 id='services'>I currently work as a full-time software developer for BT, but I am open to small freelance projects including custom WordPress themes and other front-end projects.</h5>
+        <a href="#portfolio-images"><i class="fa fa-chevron-circle-down"></i> </a>
+      </section>
+
+      <section id='portfolio-images'>
+
+        <h1 class='work-h1'>Portfolio</h1>
+
+        <h5 class="image-titles">Personal Website</h5>
+        <p>The site you're currently looking at! Built mostly using pure HTML and CSS and JavaScript.</p>
+        <div class="screenshots">
+          <img src="images/portfolio-screenshot.png" alt="Screenshot of portfolio site home page.">
+        </div>
+
+        <h5 class="image-titles">To-Do App</h5>
+        <p>Collaborative Task Management project. Built using HTML, CSS and Python (Flask). I was responsible for the UI.</p>
+          <div class="screenshots">
+            <img src="images/taskify.png" alt="Screenshot of single page to-do app.">
+          </div>
+
+          <h5 class="image-titles">Phonebook</h5>
+          <p>Collaborative phonebook project. Built using HTML, CSS, SQL and Python (Flask). I was responsible for the UI, but I also contributed to the database build.</p>
+          <div class="screenshots">
+            <img src="images/phonebook.png" alt="Screenshot of a phonebook home page to search both business and residential addresses">
+          </div>
+
+          <h5 class="image-titles">Loading Pages</h5>
+          <p>Some simple loading graphics for loading pages or sections. HTML and pure CSS.</p>
+          <div class="screenshots">
+            <video src="images/loading-page.mov"></video>
+          </div>
+
+      </section>
 
 
+    </main>
+
+  </div>
   <footer>
+
     <section class='social-icons'>
+      <a href="https://instagram.com/thehonestdev" class='instagram'> <i class='fa fa-instagram'></i> </a>
       <a href="http://medium.com/@ellenmacpherson92/" class="medium"><i class="fa fa-medium"></i></a>
       <a href="linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
       <a href="github.com/ellenmacpherson" class="github"><i class="fa fa-github"></i></a>
       <a href="https://codepen.io/ellenmacpherson" class="codepen"><i class="fa fa-codepen"></i></a>
+      <p>Ellen Macpherson.<i class='fa fa-copyright'></i> 2018.</p>
     </section>
+
   </footer>
+
 </body>
 
 </html>
