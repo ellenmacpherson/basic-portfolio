@@ -144,6 +144,55 @@ label {
 }
 
 /*##############################################################
+#---------- SUCCESS PAGE
+##############################################################
+*/
+
+#success-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30vh 30vh 30vh;
+  grid-template-columns: 100%;
+}
+
+#success-wrapper h1,
+#success-wrapper p,
+#success-wrapper a {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+
+#success-wrapper h1 {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+#success-wrapper p {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#success-wrapper a:hover {
+  color: rgba(135, 182, 167, 0.8);
+}
+
+.thanks-text {
+  grid-row-start: 2;
+  justify-items: center;
+  align-items: center;
+}
+
+i {
+  padding-right: 20px;
+  font-size: 50px;
+}
+
+/*##############################################################
 #---------- MEDIA QUERIES - TABLETS AND SMARTPHONES
 ##############################################################
 */
