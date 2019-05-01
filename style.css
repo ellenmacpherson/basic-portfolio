@@ -294,6 +294,35 @@ label {
 */
 @media screen and (max-width: 800px) {
 
+  .main-top-nav {
+    z-index: 100000000;
+  }
+
+  li.dashes {
+    color: #333;
+  }
+
+  #hamburger {
+    display: inline-block;
+  }
+
+  .main-top-nav ul {
+    display: none;
+
+  }
+
+  .menu li a {
+    display: block;
+    width: 100%;
+  }
+
+  .menu {
+    background-color: white;
+  }
+
+
+
+
   #home-image,
   #home-headers {
     display: block;
@@ -362,6 +391,10 @@ label {
 ##############################################################
 */
 @media screen and (min-width: 800px) {
+
+  #hamburger {
+    display: none;
+  }
 
   #home-link:hover {
     color: rgba(255, 127, 80, 0.8);
