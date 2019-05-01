@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"] 
+  path = '/Users/ellenmacpherson/Documents/basic_portfolio/typeit'; 
+  url = git://github.com/alexmacarthur/typeit.git/
