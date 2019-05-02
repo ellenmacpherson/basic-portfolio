@@ -13,6 +13,8 @@ html, body {
   z-index: 1;
   height: 100%;
   margin: 0;
+  background: #262626;
+  color: white;
 }
 .wrapper {
   min-height: 100%;
@@ -29,6 +31,15 @@ html, body {
 #---------- HEADER AND FOOTER STYLING
 ##############################################################
 */
+
+#home-headers {
+  color: white;
+}
+
+#lastname,
+#firstname {
+  color: #262626;
+}
 
 .main-top-nav {
   z-index: 1000000;
@@ -55,7 +66,7 @@ html, body {
 }
 
 .main-top-nav ul li a {
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
@@ -84,7 +95,7 @@ footer {
   font-size: 24px;
   text-align: center;
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 .social-icons a:hover {
@@ -157,7 +168,7 @@ h5 {
 }
 
 .fa-chevron-circle-down:hover {
-  color: #333;
+  color: white;
 }
 
 /*
@@ -237,12 +248,18 @@ video {
   color: rgba(255, 23, 167, 0.7);
 }
 
+.fa-chevron-circle-down:hover {
+  color: white;
+}
+
 
 
 /*##############################################################
 #---------- CONTACT PAGE
 ##############################################################
 */
+
+
 .contact-main {
   margin: 0 auto;
   text-align: center;
@@ -261,7 +278,7 @@ video {
 .contact-p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
 }
 
 input,
@@ -279,11 +296,12 @@ textarea {
   font-size: 14px;
   padding: 7px;
   margin: 10px auto;
-  border: 1px solid #333;
+  border: 1px solid #262626;
 }
 
 label {
-  margin: 20px 0px 10px 0px;
+  padding-bottom: 10px;
+  margin: 30px 0px 10px 0px;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
@@ -292,7 +310,7 @@ label {
   background: rgba(145, 174, 193, 0.9);
   border: none;
   padding: 10px 5px;
-  margin-top: 5px;
+  margin-top: 20px;
   font-size: 18px;
 }
 
@@ -317,7 +335,7 @@ label {
 #success-wrapper p,
 #success-wrapper a {
   font-family: 'Montserrat', sans-serif;
-  color: #333;
+  color: white;
   text-decoration: none;
   text-align: center;
   padding: 10px;
@@ -361,7 +379,7 @@ i {
   }
 
   li.dashes {
-    color: #333;
+    color: white;
   }
 
   #hamburger {
@@ -492,16 +510,17 @@ i {
   }
 
   #home-img {
-    margin-left: 70px;
+    margin-left: 75px;
     grid-row: 4 / span 6;
     grid-column: 2 / span 2;
     height: 300px;
     width: auto;
     border-radius: 150px;
+    border: 1px solid white;
   }
 
   .home-h1 {
-    margin-top: 60px;
+    margin-top: 55px;
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     grid-column-start: 2;
