@@ -1,66 +1,43 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ellen Macpherson | Developer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway|Montserrat|Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body id='home-page'>
-  <div class="wrapper">
-
-
-  <header>
-    <nav class='main-top-nav'>
-      <div class="dropdown-nav">
-        <button id='hamburger' class='active'>&#9776;</button>
-      </div>
-      <ul class='menu'>
-        <li><a href='index.html' id='home-link'>home</a></li>
-        <li class='dashes'>//</li>
-        <li><a href='about.html' id='about-link'>about</a></li>
-        <li class='dashes'>//</li>
-        <li><a href='work.html' id='work-link'>work</a></li>
-        <li class='dashes'>//</li>
-        <li><a href='contact.html' id='contact-link'>contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-
-    <section id='home-image'>
-      <img id='home-img' src="images/profile.jpg" alt="Head and shoulders picture of Ellen">
-    </section>
-    <section id='home-headers'>
-      <h1 class='home-h1'> <span id='firstname'>Ellen</span> <br><span id='lastname'>Macpherson</span></h1>
-      <h2 class='home-h2'> <span>Developer.</span> <span>Graduate.</span> <span>Creative.</span> </h2>
+<body class="home">
+    <section class="background">
+        <nav>
+            <ul class='site-nav'>
+                <li><a href="index.html">🏠</a></li>
+                <li><a href="resume.html">❓</a></li>
+                <li><a href="contact.html">📞</a></li>
+            </ul>
+        </nav>
+        <div class="introduction">
+            <h1 id="typewriter"></h1>
+        </div>
+        <footer>
+            <section class='social-icons'>
+                <a href="https://instagram.com/thehonestdev" class='instagram'> <i class='fa fa-instagram'></i> </a>
+                <a href="http://medium.com/@ellenmacpherson92/" class="medium"><i class="fa fa-medium"></i></a>
+                <a href="linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="github.com/ellenmacpherson" class="github"><i class="fa fa-github"></i></a>
+                <a href="https://codepen.io/ellenmacpherson" class="codepen"><i class="fa fa-codepen"></i></a>
+                <p class='copyright-tag'>Website designed and developed by Ellen Macpherson &#9400; 2019.</p>
+            </section>
+        </footer>
     </section>
 
-
-  </main>
-
-</div>
-  <footer>
-    <section class='social-icons'>
-      <a href="https://instagram.com/thehonestdev" class='instagram'> <i class='fa fa-instagram'></i> </a>
-      <a href="http://medium.com/@ellenmacpherson92/" class="medium"><i class="fa fa-medium"></i></a>
-      <a href="linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      <a href="github.com/ellenmacpherson" class="github"><i class="fa fa-github"></i></a>
-      <a href="https://codepen.io/ellenmacpherson" class="codepen"><i class="fa fa-codepen"></i></a>
-      <p class='copyright-tag'>Website designed and developed by Ellen Macpherson &#9400; 2019.</p>
-    </section>
-  </footer>
-
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-  <script src='nav.js'>
-
-  </script>
-  <script src='main.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@v6/dist/typeit.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

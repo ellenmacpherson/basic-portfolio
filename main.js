@@ -13,12 +13,22 @@ var bio = ['2 degrees.','5 cities.','10,622 miles from home.',codingDays + ' day
 
 
 new TypeIt('#typewriter', {
-  // lifeLike: true,
+  lifeLike: false,
   cursorChar: '|',
   strings: bio,
-  speed: 50,
+  speed: 70,
   breakLines: false,
   waitUntilVisible: true,
-  deleteSpeed: 50,
-  nextStringDelay: 1000
-}).go();
+  deleteSpeed: 60,
+  nextStringDelay: 1000,
+})
+.exec(async () => {
+  await new Promise((resolve, reject) => {
+    setTimeout(() => {
+      return resolve();
+    }, 2000)
+  });
+})
+.delete(bio[4].length)
+.type('\nHi, I\'m Ellen. It\'s great to have you here 👋')
+.go();
