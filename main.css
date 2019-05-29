@@ -246,6 +246,19 @@ label {
     transition-delay: 2000;
 }
 
+.success-h1,
+.success-h2 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success-h2 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
 @media screen and (max-width: 800px) {
     
     nav .site-nav {
@@ -291,3 +304,4 @@ label {
         margin-top: 5%;
     }
 }
+
