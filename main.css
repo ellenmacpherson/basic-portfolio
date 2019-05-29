@@ -29,7 +29,7 @@ html {
 
 .home .introduction h1 {
     font-weight: 100;
-    margin-top: 100px;
+    margin-top: 12%;
     text-align: center;
     font-size: 3rem;
 }
@@ -53,8 +53,8 @@ nav {
 nav .site-nav {
     text-align: right;
     margin-right: 10%;
-
 }
+
 
 nav ul li {
     display: inline;
@@ -192,12 +192,14 @@ footer {
     font-weight: 100;
     text-align: center;
     font-size: 3rem;
+    padding-bottom: 10px;
 }
 
 .contact-p {
     text-align: center;
     padding-top: 20px;
     font-size: 1.2rem;
+    padding: 5px;
 }
 
 input,
@@ -242,4 +244,50 @@ label {
     background: lightgray;
     color: black;
     transition-delay: 2000;
+}
+
+@media screen and (max-width: 800px) {
+    
+    nav .site-nav {
+        text-align: center;
+        margin: 0;
+    }
+    
+    nav li {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .long-bio {
+        display: block;
+        max-width: 90%;
+        margin:0 auto;
+        padding-bottom: 20px;
+    }
+
+    .contact-form {
+        padding-bottom: 20px;
+    }
+
+    .why,
+    .what,
+    .who {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    .why li,
+    .what li,
+    .who li {
+        text-align: center;
+        list-style: none;
+    }
+
+    .home h1 {
+        font-size: 0.8rem;
+        margin: 10px;
+        margin-top: 5%;
+    }
 }
