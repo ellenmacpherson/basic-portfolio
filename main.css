@@ -96,7 +96,7 @@ footer {
     font-size: 18px;
     text-align: center;
     text-decoration: none;
-    color: lightgray;
+    color: #595959;
 }
 
 .social-icons a:hover {
@@ -107,7 +107,7 @@ footer {
     font-size: 8px;
     font-family: 'Montserrat', sans-serif;
     padding: 20px 0px 0px 0px;
-    color: lightgrey;
+    color: #595959;
 }
 
 .bio-h1 {
