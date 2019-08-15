@@ -3,6 +3,10 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .parent {
     min-height: 100vh;
     display: grid;
@@ -24,14 +28,16 @@ html {
     grid-area: 2 / 2 / 4 / 5;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    color: black;
 }
 
 .home .introduction h1 {
-    font-weight: 100;
-    margin-top: 12%;
+    padding: 20px;
+    line-height: .8;
+    font-weight: lighter;
+    margin-top: 11%;
     text-align: center;
     font-size: 3rem;
+    font-family: 'Lato', sans-serif;
 }
 
 /* .introduction h2 {
@@ -150,7 +156,6 @@ footer {
     max-width: 100%;
     font-weight: 100;
     font-size: 2rem;
-    font-family: Georgia, 'Times New Roman';
 }
 
 .long-bio li {
@@ -180,10 +185,14 @@ footer {
 
 }
 
+.contact nav {
+    padding-bottom: 10px;
+}
+
 
 .contact-form {
-    width: 70%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 20px auto;
     /* padding: 20px 50px; */
 }
 
@@ -192,7 +201,7 @@ footer {
     font-weight: 100;
     text-align: center;
     font-size: 3rem;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .contact-p {
@@ -215,7 +224,7 @@ input,
 textarea {
     width: 70%;
     font-size: 14px;
-    padding: 7px;
+    padding: 15px;
     margin: 10px auto;
     opacity: 0.9;
 }
@@ -230,8 +239,10 @@ label {
 
 #submit {
     display: block;
+    border-radius: 40px;
     text-align: center;
-    margin: 10px auto;
+    margin: 20px auto;
+    margin-bottom: 30px;
     background: black;
     padding: 10px 50px;
     border: none;
@@ -241,8 +252,8 @@ label {
 }
 
 #submit:hover {
-    background: lightgray;
-    color: black;
+    background: rgb(212, 43, 1);
+    color: white;
     transition-delay: 2000;
 }
 
@@ -284,7 +295,7 @@ label {
     }
 
     .contact-form {
-        padding-bottom: 20px;
+        padding: 20px;
     }
 
     .why,
